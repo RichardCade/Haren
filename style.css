@@ -1,0 +1,37 @@
+body, html {
+   font-family: 'Montserrat', sans-serif;
+}
+
+.masthead {
+   background-image: url('img/LandingPage.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   -webkit-box-shadow: inset 0 0 100px #000;
+   box-shadow: inset 0 0 100px #000;
+   color: white;
+   height: 100vh;
+}
+
+.mastheadMainText p{
+   font-size: 11rem;
+   font-weight: 100;
+   padding-top: 550px;
+   text-shadow: 0 0 10px #fff;
+}
+
+.masthead .btn {
+   background-color: white;
+   color: black;
+   font-size: 1.5rem;
+}
+
+.masthead .btn:hover {
+   -webkit-box-shadow: 0 0 10px #fff;
+   box-shadow: 0 0 10px #fff;
+   font-weight: 400;
+}
+
+.masthead .email a {
+color: white;
+  text-align: center;
+}
