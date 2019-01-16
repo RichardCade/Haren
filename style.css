@@ -1,56 +1,64 @@
 body,
 html {
    font-family: 'Montserrat', sans-serif;
+   height: 100%;
 }
 
-.masthead {
-   background-image: url('img/LandingPage.jpg');
-   background-position: center;
-   background-repeat: no-repeat;
+#cover {
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   background: #222 url('img/LandingPage.jpg') center center no-repeat;
    background-size: cover;
    -webkit-box-shadow: inset 0 0 100px #000;
-   box-shadow: inset 0 0 100px #000;
+           box-shadow: inset 0 0 100px #000;
    color: white;
-   height: 100vh;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   height: 100%;
+   text-align: center;
 }
 
-.mastheadMainText p {
-   font-size: 40px;
+#cover-caption {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.coverText {
+   font-size: 35px;
    font-weight: 100;
-   padding-top: 400px;
-   text-align: center;
+   padding-top: 300px;
    text-shadow: 0 0 10px #fff;
 }
 
-.masthead .btn {
-   background-color: white;
-   color: black;
-   font-size: 1.5rem;
+.email {
+           -webkit-transform: translateY(180px);
 }
 
-.masthead .btn:hover {
-   -webkit-box-shadow: 0 0 10px #fff;
-   box-shadow: 0 0 10px #fff;
-   font-weight: 400;
-}
-
-.masthead .email a {
+#cover a {
    color: white;
-   text-align: center;
 }
 
-
-/* MEDIA */
+@media screen and (min-width: 768px) {
+   .coverText {
+      font-size: 100px;
+   }
+   .email {
+           -webkit-transform: translateY(130px);   
+}
+}
 
 @media screen and (min-width: 1200px) {
-   .mastheadMainText p {
-      font-size: 90px;
-      padding-top: 450px;
+   .coverText {
+      font-size: 140px;
    }
+   .email {
+           -webkit-transform: translateY(130px);   
 }
-
-@media screen and (min-width: 1900px) {
-   .mastheadMainText p {
-      padding-top: 550px;
-   }
 }
